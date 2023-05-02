@@ -14,75 +14,75 @@
     <h1 class="mb-4 text-4xl font-bold align-middle">Calculator</h1>
     </div>
     <div class=" min-w-screen min-h-screen bg-zinc-900 flex items-center justify-center px-6 py-6">
-        <div class="calculator w-full mx-auto rounded-xl bg-amber-100 shadow-xl text-gray-900 relative overflow-hidden" style="max-width:500px"">
+        <div class="calculator w-full mx-auto rounded-xl bg-amber-100 shadow-xl text-gray-900 relative overflow-hidden " style="max-width:500px"">
             <div class="w-full h-auto bg-gradient-to-b from-amber-100 to-zinc-50 flex items-end text-right p-6">
-                <input type="text" placeholder="0" id="output-screen" class="w-full py-5 px-6 text-5xl text-right text-zinc-950 font-medium rounded-xl"></div>
-                <div class="w-full bg-gradient-to-b from-zinc-50 to-amber-100">
-                    <div class="flex w-full">
-                        <div class="w-1/4 border-r border-b border-zinc-100">
-                            <button onclick="Clear()" class="w-full h-16 outline-none focus:outline-none hover:bg-zinc-500 hover:bg-opacity-20 text-zinc-950 text-opacity-100 text-xl font-semibold">Cl</button>
+                <input type="text" placeholder="0" id="output-screen" class="w-full py-5 px-6 text-5xl text-right text-zinc-950 font-medium rounded-xl border border-amber-400"></div>
+                <div class="w-full bg-gradient-to-b from-zinc-50 to-amber-100 ">
+                    <div class="flex w-full px-6 ">
+                        <div class="w-1/4 border-r border-b  border-gray-800 rounded-full">
+                            <button onclick="Clear()" class="w-full h-16 outline-none focus:outline-none hover:bg-amber-300 hover:bg-opacity-20 hover:rounded-full text-zinc-950 text-opacity-100 text-xl font-semibold">Cl</button>
                         </div>
-                        <div class="w-1/4 border-r border-b border-zinc-100">
-                            <button onclick="del()" class="w-full h-16 outline-none focus:outline-none hover:bg-zinc-500 hover:bg-opacity-20 text-zinc-950 text-opacity-100 text-xl font-semibold">DEL</button>
+                        <div class="w-1/4 border-r border-b border-gray-800 rounded-full">
+                            <button onclick="del()" class="w-full h-16 outline-none focus:outline-none hover:bg-amber-300 hover:bg-opacity-20 hover:rounded-full text-zinc-950 text-opacity-100 text-xl font-semibold">DEL</button>
                         </div>
-                        <div class="w-1/4 border-r border-b border-zinc-100">
-                            <button onclick="display('%')" class="w-full h-16 outline-none focus:outline-none hover:bg-zinc-500 hover:bg-opacity-20 text-zinc-950 text-opacity-100 text-xl font-medium">%</button>
+                        <div class="w-1/4 border-r border-b border-gray-800 rounded-full">
+                            <button onclick="display('%')" class="w-full h-16 outline-none focus:outline-none hover:bg-amber-300 hover:bg-opacity-20 hover:rounded-full text-zinc-950 text-opacity-100 text-xl font-medium">%</button>
                         </div>
-                        <div class="w-1/4 border-r border-b border-zinc-100">
-                            <button onclick="display('/')" class="w-full h-16 outline-none focus:outline-none hover:bg-zinc-500 hover:bg-opacity-20 text-zinc-950 text-opacity-100 text-xl font-medium">/</button>
-                        </div>
-                    </div>
-                    <div class="flex w-full">
-                        <div class="w-1/4 border-r border-b border-zinc-100">
-                            <button onclick="display('7')" class="w-full h-16 outline-none focus:outline-none hover:bg-zinc-500 hover:bg-opacity-20 text-zinc-950 text-opacity-100 text-xl font-medium">7</button>
-                        </div>
-                        <div class="w-1/4 border-r border-b border-zinc-100">
-                            <button onclick="display('8')" class="w-full h-16 outline-none focus:outline-none hover:bg-zinc-500 hover:bg-opacity-20 text-zinc-950 text-opacity-100 text-xl font-medium">8</button>
-                        </div>
-                        <div class="w-1/4 border-r border-b border-zinc-100">
-                            <button onclick="display('9')" class="w-full h-16 outline-none focus:outline-none hover:bg-zinc-500 hover:bg-opacity-20 text-zinc-950 text-opacity-100 text-xl font-medium">9</button>
-                        </div>
-                        <div class="w-1/4 border-r border-b border-zinc-100">
-                            <button onclick="display('*')" class="w-full h-16 outline-none focus:outline-none hover:bg-zinc-500 hover:bg-opacity-20 text-zinc-950 text-opacity-100 text-xl font-medium">X</button>
+                        <div class="w-1/4 border-r border-b  border-gray-800 rounded-full">
+                            <button onclick="display('/')" class="w-full h-16 outline-none focus:outline-none hover:bg-amber-300 hover:bg-opacity-20 hover:rounded-full text-zinc-950 text-opacity-100 text-xl font-medium">/</button>
                         </div>
                     </div>
-                    <div class="flex w-full">
-                        <div class="w-1/4 border-r border-b border-zinc-100">
-                            <button onclick="display('4')" class="w-full h-16 outline-none focus:outline-none hover:bg-zinc-500 hover:bg-opacity-20 text-zinc-950 text-opacity-100 text-xl font-medium">4</button>
+                    <div class="flex w-full px-6">
+                        <div class="w-1/4 border-r border-b border-gray-800 rounded-full">
+                            <button onclick="display('7')" class="w-full h-16 outline-none focus:outline-none hover:bg-amber-300 hover:bg-opacity-20 hover:rounded-full text-zinc-950 text-opacity-100 text-xl font-medium">7</button>
                         </div>
-                        <div class="w-1/4 border-r border-b border-zinc-100">
-                            <button onclick="display('5')" class="w-full h-16 outline-none focus:outline-none hover:bg-zinc-500 hover:bg-opacity-20 text-zinc-950 text-opacity-100 text-xl font-medium">5</button>
+                        <div class="w-1/4 border-r border-b border-gray-800 rounded-full">
+                            <button onclick="display('8')" class="w-full h-16 outline-none focus:outline-none hover:bg-amber-300 hover:bg-opacity-20 hover:rounded-full text-zinc-950 text-opacity-100 text-xl font-medium">8</button>
                         </div>
-                        <div class="w-1/4 border-r border-b border-zinc-100">
-                            <button onclick="display('6')" class="w-full h-16 outline-none focus:outline-none hover:bg-zinc-500 hover:bg-opacity-20 text-zinc-950 text-opacity-100 text-xl font-medium">6</button>
+                        <div class="w-1/4 border-r border-b border-gray-800 rounded-full">
+                            <button onclick="display('9')" class="w-full h-16 outline-none focus:outline-none hover:bg-amber-300 hover:bg-opacity-20 hover:rounded-full text-zinc-950 text-opacity-100 text-xl font-medium">9</button>
                         </div>
-                        <div class="w-1/4 border-r border-b border-zinc-100">
-                            <button onclick="display('-')" class="w-full h-16 outline-none focus:outline-none hover:bg-zinc-500 hover:bg-opacity-20 text-zinc-950 text-opacity-100 text-xl font-medium">-</button>
-                        </div>
-                    </div>
-                    <div class="flex w-full">
-                        <div class="w-1/4 border-r border-b border-zinc-100">
-                            <button onclick="display('1')" class="w-full h-16 outline-none focus:outline-none hover:bg-zinc-500 hover:bg-opacity-20 text-zinc-950 text-opacity-100 text-xl font-medium">1</button>
-                        </div>
-                        <div class="w-1/4 border-r border-b border-zinc-100">
-                            <button onclick="display('2')" class="w-full h-16 outline-none focus:outline-none hover:bg-zinc-500 hover:bg-opacity-20 text-zinc-950 text-opacity-100 text-xl font-medium">2</button>
-                        </div>
-                        <div class="w-1/4 border-r border-b border-zinc-100">
-                            <button onclick="display('3')" class="w-full h-16 outline-none focus:outline-none hover:bg-zinc-500 hover:bg-opacity-20 text-zinc-950 text-opacity-100 text-xl font-medium">3</button>
-                        </div>
-                        <div class="w-1/4 border-r border-b border-zinc-100">
-                            <button onclick="display('+')" class="w-full h-16 outline-none focus:outline-none hover:bg-zinc-500 hover:bg-opacity-20 text-zinc-950 text-opacity-100 text-xl font-medium">+</button>
+                        <div class="w-1/4 border-r border-b border-gray-800 rounded-full">
+                            <button onclick="display('*')" class="w-full h-16 outline-none focus:outline-none hover:bg-amber-300 hover:bg-opacity-20 hover:rounded-full text-zinc-950 text-opacity-100 text-xl font-medium">X</button>
                         </div>
                     </div>
-                    <div class="flex w-full">
-                        <div class="w-1/4 border-r border-b border-zinc-100">
-                            <button onclick="display('.')" class="w-full h-16 outline-none focus:outline-none hover:bg-zinc-500 hover:bg-opacity-20 text-zinc-950 text-opacity-100 text-xl font-medium">.</button>
+                    <div class="flex w-full px-6">
+                        <div class="w-1/4 border-r border-b border-gray-800 rounded-full">
+                            <button onclick="display('4')" class="w-full h-16 outline-none focus:outline-none hover:bg-amber-300 hover:bg-opacity-20 hover:rounded-full text-zinc-950 text-opacity-100 text-xl font-medium">4</button>
                         </div>
-                        <div class="w-1/4 border-r border-b border-zinc-100">
-                            <button onclick="display('0')" class="w-full h-16 outline-none focus:outline-none hover:bg-zinc-500 hover:bg-opacity-20 text-zinc-950 text-opacity-100 text-xl font-medium">0</button>
+                        <div class="w-1/4 border-r border-b border-gray-800 rounded-full">
+                            <button onclick="display('5')" class="w-full h-16 outline-none focus:outline-none hover:bg-amber-300 hover:bg-opacity-20 hover:rounded-full text-zinc-950 text-opacity-100 text-xl font-medium">5</button>
                         </div>
-                        <div class="w-2/4 border-r border-b border-zinc-100">
-                            <button onclick="Calculate()" class="w-full h-16 outline-none focus:outline-none hover:bg-zinc-500 hover:bg-opacity-20 text-zinc-950 text-opacity-100 text-xl font-semibold">=</button>
+                        <div class="w-1/4 border-r border-b border-gray-800 rounded-full">
+                            <button onclick="display('6')" class="w-full h-16 outline-none focus:outline-none hover:bg-amber-300 hover:bg-opacity-20 hover:rounded-full text-zinc-950 text-opacity-100 text-xl font-medium">6</button>
+                        </div>
+                        <div class="w-1/4 border-r border-b border-gray-800 rounded-full">
+                            <button onclick="display('-')" class="w-full h-16 outline-none focus:outline-none hover:bg-amber-300 hover:bg-opacity-20 hover:rounded-full text-zinc-950 text-opacity-100 text-xl font-medium">-</button>
+                        </div>
+                    </div>
+                    <div class="flex w-full px-6">
+                        <div class="w-1/4 border-r border-b border-zinc-950 rounded-full">
+                            <button onclick="display('1')" class="w-full h-16 outline-none focus:outline-none hover:bg-amber-300 hover:bg-opacity-20 hover:rounded-full text-zinc-950 text-opacity-100 text-xl font-medium">1</button>
+                        </div>
+                        <div class="w-1/4 border-r border-b border-zinc-950 rounded-full">
+                            <button onclick="display('2')" class="w-full h-16 outline-none focus:outline-none hover:bg-amber-300 hover:bg-opacity-20 hover:rounded-full text-zinc-950 text-opacity-100 text-xl font-medium">2</button>
+                        </div>
+                        <div class="w-1/4 border-r border-b border-zinc-950 rounded-full">
+                            <button onclick="display('3')" class="w-full h-16 outline-none focus:outline-none hover:bg-amber-300 hover:bg-opacity-20 hover:rounded-full text-zinc-950 text-opacity-100 text-xl font-medium">3</button>
+                        </div>
+                        <div class="w-1/4 border-r border-b border-zinc-950 rounded-full">
+                            <button onclick="display('+')" class="w-full h-16 outline-none focus:outline-none hover:bg-amber-300 hover:bg-opacity-20 hover:rounded-full text-zinc-950 text-opacity-100 text-xl font-medium">+</button>
+                        </div>
+                    </div>
+                    <div class="flex w-full px-6 pb-5">
+                        <div class="w-1/4 border-r border-b border-zinc-950 rounded-full">
+                            <button onclick="display('.')" class="w-full h-16 outline-none focus:outline-none hover:bg-amber-300 hover:bg-opacity-20 hover:rounded-full text-zinc-950 text-opacity-100 text-xl font-medium">.</button>
+                        </div>
+                        <div class="w-1/4 border-r border-b border-zinc-950 rounded-full">
+                            <button onclick="display('0')" class="w-full h-16 outline-none focus:outline-none hover:bg-amber-300 hover:bg-opacity-20 hover:rounded-full text-zinc-950 text-opacity-100 text-xl font-medium">0</button>
+                        </div>
+                        <div class="w-2/4 border-r border-b border-zinc-950 rounded-full">
+                            <button onclick="Calculate()" class="w-full h-16 outline-none focus:outline-none hover:bg-amber-300 hover:bg-opacity-20 hover:rounded-full text-zinc-950 text-opacity-100 text-xl font-semibold">=</button>
                         </div>
 
                         
